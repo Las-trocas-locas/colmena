@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from django.contrib import admin
 
-from .models.zona import Zona
+from .models.zonas import Zona
 from .models.usuarios import Usuario
 from .models.bahias import Bahia
 from .models.areas import Area #zonas_bahía

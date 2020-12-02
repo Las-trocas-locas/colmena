@@ -3,7 +3,7 @@ from .bahias import Bahia
 from .viajes import Viaje
 from .areas import Area
 
-class Destinos(models.Model):
+class Destino(models.Model):
     direccion = models.CharField(max_length=30)
     coordenadas = models.CharField(max_length=30)
     llegada_bahia = models.CharField(max_length=30)

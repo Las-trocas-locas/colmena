@@ -4,5 +4,7 @@ from . import views
 from .views_files import inicio
 
 urlpatterns = [
-    path('', inicio.inicio, name='inicio'),
+    path('', inicio.landing, name='landing'),
+    path('login/', inicio.login, name='login'),
+    path('registro/', inicio.registro, name='registro'),
 ]

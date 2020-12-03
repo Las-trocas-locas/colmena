@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="116.41666mm"
+   height="23.8125mm"
+   viewBox="0 0 116.41667 23.8125"
+   version="1.1"
+   id="svg4364"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="gmail_btn.svg">
+  <defs
+     id="defs4358" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="213.80147"
+     inkscape:cy="21.154743"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g6089"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4361">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-72.194794,-122.38689)">
+    <g
+       id="g6089">
+      <path
+         style="fill:#dd4b39;stroke-width:0.26458332"
+         inkscape:connector-curvature="0"
+         id="path184"
+         d="M 176.70521,146.19939 H 84.101044 c -6.574896,0 -11.90625,-5.33135 -11.90625,-11.90625 v 0 c 0,-6.5749 5.331354,-11.90625 11.90625,-11.90625 h 92.604166 c 6.57489,0 11.90625,5.33135 11.90625,11.90625 v 0 c 0,6.5749 -5.33136,11.90625 -11.90625,11.90625 z"
+         class="st165" />
+      <text
+         style="font-size:6.3499999px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+         id="text189"
+         class="st0 st154 st164"
+         x="106.90712"
+         y="136.68095">Continuar con Google</text>
+      <g
+         id="g637"
+         transform="matrix(0.26458333,0,0,0.26458333,-13.340478,-223.51366)">
+        <g
+           id="glass_2_">
+          <path
+             style="fill:#f2f2f2;stroke:#f2f2f2;stroke-width:1.75;stroke-miterlimit:10"
+             inkscape:connector-curvature="0"
+             id="path634"
+             d="m 392.15,1352.4 v 4.02 h 9.5 c -0.97,5.63 -5.47,9.66 -11.11,9.66 -6.6,0 -12.07,-5.47 -12.07,-12.07 0,-6.6 5.47,-12.07 12.07,-12.07 3.38,0 6.28,1.45 8.37,3.7 l 2.9,-2.9 c -2.9,-2.9 -6.76,-4.83 -11.27,-4.83 -8.85,0 -16.1,7.24 -16.1,16.1 0,8.85 7.24,16.1 16.1,16.1 8.85,0 15.29,-7.24 15.29,-16.1 v -1.61 z"
+             class="st231" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

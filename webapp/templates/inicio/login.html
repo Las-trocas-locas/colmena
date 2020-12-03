@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="/static/css/app.css">
-    </head>
+  <head>
+    <title>Login</title>
+    <!-- Latest compiled and minified CSS -->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     
-    <body>
-        
-        <div class="formcont">
-            
-          <form method="post">
-	    {% csrf_token %}
-            <h1>Entrar en tu cuenta</h1><br>
-            Tu correo <br>
-            <input name="correo" placeholder="email@ejemplo.com"> <br>
-            Tu contraseña <br>
-            <input name="contrasena" placeholder="Password"> <br>
-            <input type="checkbox">Recordar <br>                
-            <input type="submit" value="Entrar">
-	    <a href="/register">Registrarse</a>        
-          </form>	  
-        </div>
-        
-    </body>
+    <link rel="stylesheet" href="/static/css/login.css">
+    
+  </head>
+
+  {% load static %}
+  {% load svg %}
+  {% block content %}
+  <div class="mdl-grid">
+    
+    <div class="mdl-cell mdl-cell--3-col">
+      <img class="top_img_izq" src="{% static 'svg/top_izquierda.svg' %}">
+      <img class="bottom_img_izq" src="{% static 'svg/bottom_izquierda.svg' %}">	
+    </div>
+    
+    <div class="mdl-cell mdl-cell--6-col col_form">
+      <div class="col-lg-12 colmena">
+	<p class="">Colmena</p>
+      </div>
+      <div class="mdl-cell mdl-cell--12-col">
+	<img class="logo" src="{% static 'svg/logo2_final.svg' %}">
+      </div>
+      
+      <div class="formcont mdl-cell mdl-cell--12-col">
+	
+	<form method="post" id="login_form">
+	  {% csrf_token %}
+          <div class="mdl-textfield mdl-js-textfield">
+	    <input name="correo" class="mdl-textfield__input" type="text" id="email">
+	    <label class="mdl-textfield__label" for="email">Correo electrónico</label>
+	  </div>
+	  
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <input name="contrasena" class="mdl-textfield__input" type="text" id="contra">
+	    <label class="mdl-textfield__label" for="contra">Contraseña</label>	   	    
+	  </div>
+	  <a id="contra_olv"  href="#">¿Olvidaste la contraseña?</a>	  
+	  <br>                
+	</form>
+	<button class="svg_btn" type="submit" form="login_form">
+	  {% svg "login_btn" %}
+	</button>
+	<br>
+	<button class="svg_btn">
+	  {% svg "fb_btn" %}
+	</button>
+	<br>
+	<button class="svg_btn">
+	  {% svg "gmail_btn" %}
+	</button>
+	<br>
+      </div>
+      <p class="p_col">¿Aún no eres parte de la Colmena?</p>
+      <a href="/registro">Crear una cuenta</a>
+    </div>
+    
+    <div class="mdl-cell mdl-cell--3-col">      
+      <!--img class="top_img_der" src="{% static 'svg/top_derecha.svg' %}">
+      <img class="bottom_img_der"  src="{% static 'svg/bottom_derecha.svg' %}"-->	      
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
 </html>

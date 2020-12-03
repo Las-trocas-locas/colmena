@@ -22,5 +22,16 @@
         <img class="imglogo" src="/static/img/logo.svg">
 
         <button onclick="document.location=`login`" class="btnmain">Iniciar sesion</button>
+
+	<form method="post">
+	  {% csrf_token %}
+	  Primer nombre:<input name="primer_nombre" > <br>
+	  Segundo nombre:<input name="segundo_nombre"> <br>
+	  Correo: <input name="correo" > <br>
+	  Contraseña: <input name="contrasena" > <br>
+	  Teléfono: <input name="telefono"> <br>
+	  Licencia: <input name="licencia"> <br>
+	  <input type="submit" value="Submit">
+	</form>
     </body>
 </html>

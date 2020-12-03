@@ -9,17 +9,17 @@
         
         <div class="formcont">
             
-            <form>
-                <h1>Entrar en tu cuenta</h1><br>
-                Tu correo <br>
-                <input placeholder="email@ejemplo.com"> <br>
-                Tu contraseña <br>
-                <input placeholder="Password"> <br>
-                <input type="checkbox">Recordar <br>
-                
-                <a href="/register">Registrarse</a>        
-            </form>
-            <button onclick="document.location=`app`">Entrar</button> <br>
+          <form method="post">
+	    {% csrf_token %}
+            <h1>Entrar en tu cuenta</h1><br>
+            Tu correo <br>
+            <input name="correo" placeholder="email@ejemplo.com"> <br>
+            Tu contraseña <br>
+            <input name="contrasena" placeholder="Password"> <br>
+            <input type="checkbox">Recordar <br>                
+            <input type="submit" value="Entrar">
+	    <a href="/register">Registrarse</a>        
+          </form>	  
         </div>
         
     </body>

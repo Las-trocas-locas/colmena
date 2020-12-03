@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" href="/static/css/app.css">
+    </head>
+    
+    <body>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+
+        <img class="imglogo" src="/static/img/logo.svg">
+	{{ error }}
+	<form method="post">
+	  {% csrf_token %}
+	  {{ form.fecha.errors.as_text }}
+	  Fecha:<input name="fecha" > <br>
+	  {{ form.matricula_vehiculo.errors.as_text }}
+	  Matrícula de vehículo:<input name="matricula_vehiculo"> <br>
+	  <input type="submit" value="Submit">
+	</form>
+    </body>
+</html>

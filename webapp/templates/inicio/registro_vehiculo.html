@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" href="/static/css/app.css">
+    </head>
+    
+    <body>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+        <div class="hexcont">
+            <div class="hexagon"><span></span></div>
+        </div>
+
+        <img class="imglogo" src="/static/img/logo.svg">
+
+	<form method="post">
+	  {% csrf_token %}
+	  {{ form.tipo.errors.as_text }}
+	  Tipo:<input name="tipo" > <br>
+	  {{ form.anio.errors.as_text }}
+	  Año:<input name="anio"> <br>
+	  {{ form.combustible.errors.as_text }}
+	  Combustible: <input name="combustible" > <br>
+	  {{ form.capacidad.errors.as_text }}
+	  Capacidad: <input name="capacidad" > <br>
+	  {{ form.matricula.errors.as_text }}
+	  Matrícula: <input name="matricula"> <br>
+	  {{ form.tag.errors.as_text }}
+	  Tag: <input name="tag"> <br>
+	  {{ form.altura.errors.as_text }}
+	  Altura: <input name="altura"> <br>
+	  {{ form.ancho.errors.as_text }}
+	  Ancho: <input name="ancho"> <br>
+	  {{ form.largo.errors.as_text }}
+	  Longitud: <input name="largo"> <br>
+	  {{ form.FieldName.errors.as_text }}
+	  Nombre dueño: <input name="nombre_dueno"> <br>
+	  {{ form.tarjeton.errors.as_text }}
+	  Tarjetón dueño: <input name="tarjeton"> <br>
+	  <input type="submit" value="Submit">
+	</form>
+    </body>
+</html>

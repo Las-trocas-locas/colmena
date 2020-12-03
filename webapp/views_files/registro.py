@@ -28,6 +28,7 @@ def view(request):
             )
             usuario.save()
             return redirect('/login')
+        return render(request, 'inicio/registro.html', {'form': form})
     elif request.method == 'GET':
         form = RegistroUsuarioForm()
         return render(request, 'inicio/registro.html', {'form': form})

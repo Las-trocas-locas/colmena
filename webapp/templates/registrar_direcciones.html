@@ -18,13 +18,21 @@
         <div class="hexcont">
             <div class="hexagon"><span></span></div>
         </div>
-
+	Lista de Destinos:<br>
+	{% for direccion in direcciones %}
+	{{ direccion.direccion }}<br>
+	{% endfor %}
         <img class="imglogo" src="/static/img/logo.svg">
-	{{ error }}
+	<br>Nuevo destino:
+	{{ error }}	
 	<form method="post">
 	  {% csrf_token %}
-	  Fecha:<input name="fecha" > <br>
-	  Matrícula de vehículo:<input name="matricula"> <br>
+	  {{ form.direccion.errors.as_text }}
+	  Dirección:<input name="direccion" > <br>
+	  {{ form.longitud.errors.as_text }}
+	  Longitud:<input name="longitud" > <br>
+	  {{ form.latitud.errors.as_text }}
+	  Latitud:<input name="latitud" > <br>
 	  <input type="submit" value="Submit">
 	</form>
     </body>

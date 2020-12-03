@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'svg',
     'api.apps.ApiConfig',
     'webapp.apps.WebappConfig',
+    'django.contrib.gis'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,8 @@ WSGI_APPLICATION = 'colmena.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
